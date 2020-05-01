@@ -23,6 +23,12 @@
     "async": "^2.4.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "moment": "^2.18.1",
-    "truffle-hdwallet-provider": "0.0.3"
-  }
+    "truffle-hdwallet-provider": "0.0.3",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
